@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&family=Oswald:wght@200;400;500&family=Radio+Canada:wght@300;500&family=Raleway:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #c2c3f3;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a.navbar-brand {
+  color: white;
+  text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav .offcanvas {
+  background-color: #c2c3f3;
+  font-family: "Radio Canada", sans-serif;
+}
+#container-1 {
+  margin: 100px 50px 50px;
+}
+
+#container-1 h4.anime {
+  font-family: "Hubballi", cursive;
+  font-size: 20px;
+}
+
+#container-1 h1.recommend {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 3px;
+  font-size: 28px;
+}
+#container-2 {
+  margin: 0 20px;
+}
+
+#container-2 .text-2 {
+  font-family: "Radio Canada", sans-serif;
+  font-size: 20px;
+}
+
+.series {
+  display: grid;
+  gap: var(--size-5);
+  grid-auto-flow: column;
+  grid-auto-columns: 55%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.series::-webkit-scrollbar {
+  width: 0;
+}
+
+.series .card {
+  min-width: 10rem;
+}
+
+#container-3 {
+  margin: 50px 20px;
+}
+
+#container-3 .text-3 {
+  font-family: "Radio Canada", sans-serif;
+  font-size: 20px;
+}
+
+.movies {
+  display: grid;
+  gap: var(--size-5);
+  grid-auto-flow: column;
+  grid-auto-columns: 55%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.movies > img {
+  width: 10rem;
+}
+
+/* Footer */
+
+footer {
+  width: auto;
+  background-color: #7d82b8;
+  margin-top: 100px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+  text-align: center;
+}
+
+footer img {
+  width: 1.3rem;
+  margin: 10px;
+}
+
+@media (min-width: 575px) {
+  #container-1 h4.anime {
+    font-size: 40px;
+  }
+  #container-1 h1.recommend {
+    font-size: 40px;
+  }
+  .series {
+    grid-auto-flow: column;
+    grid-auto-columns: 5%;
+  }
+  .movies {
+    grid-auto-flow: column;
+    grid-auto-columns: 19%;
+  }
+}
+
+@media (min-width: 800px) {
+  .series {
+    gap: 60px;
+    grid-auto-flow: column;
+    grid-auto-columns: 20%;
+  }
+
+  .movies {
+    gap: 60px;
+    grid-auto-flow: column;
+    grid-auto-columns: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .series {
+    gap: 0;
+  }
+
+  .movies {
+    gap: 0;
+  }
+}
