@@ -46,9 +46,9 @@ nav .offcanvas {
 
 .series {
   display: grid;
-  gap: var(--size-5);
+  gap: var(--size-6);
   grid-auto-flow: column;
-  grid-auto-columns: 55%;
+  grid-auto-columns: 62%;
   overflow-x: scroll;
   overflow-y: hidden;
 }
@@ -74,7 +74,7 @@ nav .offcanvas {
   display: grid;
   gap: var(--size-5);
   grid-auto-flow: column;
-  grid-auto-columns: 55%;
+  grid-auto-columns: 62%;
   overflow-x: scroll;
   overflow-y: hidden;
 }
