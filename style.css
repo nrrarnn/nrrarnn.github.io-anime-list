@@ -83,6 +83,10 @@ nav .offcanvas {
   width: 10rem;
 }
 
+.movies::-webkit-scrollbar {
+  width: 0;
+}
+
 /* Footer */
 
 footer {
